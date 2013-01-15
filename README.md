@@ -13,6 +13,18 @@ This version accessible via:
 
 http://cfa-api.herokuapp.com/v0/fellows
 
+Local Deployment
+----------------
+
+`bundle install` #to install all the required gems
+
+`rake db:migrate` #to create the "fellows" table in the db
+
+`rake load_data:fellows` #to populate the db with the fellows info. this rake task is defined in /lib/tasks/load_data.rake
+
+`rails-api s` #to launch the local server
+
+Go to [http://localhost:3000/fellows](http://localhost:3000/fellows) to see a JSON output of all the 2013 fellows
 
 Usage
 -----
