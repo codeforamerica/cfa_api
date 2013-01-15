@@ -24,7 +24,7 @@ Local Deployment
 
 `rails-api s` #to launch the local server
 
-Go to [http://localhost:3000/fellows](http://localhost:3000/fellows) to see a JSON output of all the 2013 fellows
+Go to [http://localhost:3000/v0/fellows](http://localhost:3000/v0/fellows) to see a JSON output of all the 2013 fellows
 
 Usage
 -----
