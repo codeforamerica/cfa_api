@@ -11,7 +11,7 @@ Live Deploy
 
 This version accessible via:
 
-http://cfa-api.herokuapp.com/fellows
+http://cfa-api.herokuapp.com/v0/fellows
 
 
 Usage
@@ -22,11 +22,11 @@ Search parameters do partial match, so saying "south" will match "South Bend" an
 ### Name
 
 Example:
-http://cfa-api.herokuapp.com/fellows?name=dave
+http://cfa-api.herokuapp.com/v0/fellows?name=dave
 
 ### Team
 
 Example:
-http://cfa-api.herokuapp.com/fellows?team=south%20bend
+http://cfa-api.herokuapp.com/v0/fellows?team=south%20bend
 
 

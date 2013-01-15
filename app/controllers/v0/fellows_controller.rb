@@ -1,4 +1,4 @@
-class FellowsController < ApplicationController
+class V0::FellowsController < ApplicationController
 
   # GET /fellows
   # GET /fellows.json
