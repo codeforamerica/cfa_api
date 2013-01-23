@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 require 'nokogiri'
 require 'open-uri'
 require 'pry'
@@ -19,7 +21,7 @@ end
 doc = Nokogiri::HTML(open('fellow_info.html'))
 fellows_data = Hash.new
 doc.xpath('//*[@class="2012fellow"]').each do |e|
-  name = e.css('.name a')[0]['name']
+  name = e.css('.name')[0].text
   fellows_data[name] = Hash.new
   fellows_data[name]['name'] = name # If we want to convert fellows_data to a simple array
   fellows_data[name]['headshot_url'] = e.css('.headshot img')[0]['src']
@@ -32,5 +34,3 @@ File.open("fellows_data.json","w") do |f|
 end
 
 #binding.pry
-
-
