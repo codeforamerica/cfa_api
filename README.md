@@ -18,11 +18,17 @@ Local Deployment
 
 `bundle install` #to install all the required gems
 
-`rake db:migrate` #to create the "fellows" table in the db
+If you are deploying locally for the first time:
 
-`rake load_data:fellows` #to populate the db with the fellows info. this rake task is defined in /lib/tasks/load_data.rake
+`rake db:create db:schema:load load_data`
 
-`rails-api s` #to launch the local server
+If you already created the Fellows table before 1/23/13:
+
+`rake db:reset db:schema:load load_data`
+
+Launch the local server:
+
+`rails-api s`
 
 Go to [http://localhost:3000/v0/fellows](http://localhost:3000/v0/fellows) to see a JSON output of all the 2013 fellows
 
