@@ -58,5 +58,14 @@ module CfaApi
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Turn on CORS support
+    config.middleware.use Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get]
+      end
+    end
+
   end
 end
