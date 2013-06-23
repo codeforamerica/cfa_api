@@ -2,7 +2,6 @@
 require 'json'
 
 social_hash = {
-  "Alison Jones" =>         { github: "ajones446", twitter: "ajones446" },
   "Andrew Hyder" =>         { github: "ondrae", twitter: "hackyourcity" },
   "Ariel Kennan" =>         { github: "arielkennan", twitter: "arielmai" },
   "Lou Huang" =>            { github: "louh", twitter: "saikofish" },
